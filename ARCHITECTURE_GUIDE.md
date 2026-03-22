@@ -208,10 +208,6 @@ flowchart LR
 
 ## 7. 复用到底体现在哪里
 
-用户之前卡住的点是：
-
-“多个 controller 调一个 service 很常见，那哪里算中台复用？”
-
 这份 demo 的答案不是“共用一个函数”，而是：
 
 ### 7.1 订单服务复用库存服务
@@ -304,16 +300,16 @@ flowchart LR
 
 前端：
 
-- [host App](/Users/RunwangGuo/Documents/Playground/wujie-ecommerce-demo/apps/host/src/App.jsx)
-- [storefront App](/Users/RunwangGuo/Documents/Playground/wujie-ecommerce-demo/apps/storefront/src/App.jsx)
-- [middle App](/Users/RunwangGuo/Documents/Playground/wujie-ecommerce-demo/apps/middle-console/src/App.jsx)
-- [admin App](/Users/RunwangGuo/Documents/Playground/wujie-ecommerce-demo/apps/admin-console/src/App.jsx)
+- [host App](./apps/host/src/App.jsx)
+- [storefront App](./apps/storefront/src/App.jsx)
+- [middle App](./apps/middle-console/src/App.jsx)
+- [admin App](./apps/admin-console/src/App.jsx)
 
 后端：
 
-- [product-service](/Users/RunwangGuo/Documents/Playground/wujie-ecommerce-demo/services/product-service/src/server.js)
-- [inventory-service](/Users/RunwangGuo/Documents/Playground/wujie-ecommerce-demo/services/inventory-service/src/server.js)
-- [order-service](/Users/RunwangGuo/Documents/Playground/wujie-ecommerce-demo/services/order-service/src/server.js)
-- [marketing-service](/Users/RunwangGuo/Documents/Playground/wujie-ecommerce-demo/services/marketing-service/src/server.js)
-- [template-service](/Users/RunwangGuo/Documents/Playground/wujie-ecommerce-demo/services/template-service/src/server.js)
-- [shared store](/Users/RunwangGuo/Documents/Playground/wujie-ecommerce-demo/services/shared/store.js)
+- [product-service](./services/product-service/src/server.js)
+- [inventory-service](./services/inventory-service/src/server.js)
+- [order-service](./services/order-service/src/server.js)
+- [marketing-service](./services/marketing-service/src/server.js)
+- [template-service](./services/template-service/src/server.js)
+- [shared store](./services/shared/store.js)

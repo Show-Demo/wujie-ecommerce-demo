@@ -109,4 +109,4 @@ pnpm dev
 
 详细说明见：
 
-- [ARCHITECTURE_GUIDE.md](/Users/RunwangGuo/Documents/Playground/wujie-ecommerce-demo/ARCHITECTURE_GUIDE.md)
+- [ARCHITECTURE_GUIDE.md](./ARCHITECTURE_GUIDE.md)
