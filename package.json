@@ -1,0 +1,13 @@
+{
+  "name": "wujie-ecommerce-demo",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @wujie-demo/product-service --filter @wujie-demo/order-service --filter @wujie-demo/marketing-service --filter @wujie-demo/inventory-service --filter @wujie-demo/template-service --filter @wujie-demo/host --filter @wujie-demo/storefront --filter @wujie-demo/middle-console --filter @wujie-demo/admin-console dev",
+    "build": "pnpm -r build"
+  },
+  "devDependencies": {
+    "playwright": "^1.58.2"
+  }
+}

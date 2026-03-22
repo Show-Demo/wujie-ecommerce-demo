@@ -1,0 +1,154 @@
+:root {
+  font-family: "Helvetica Neue", "PingFang SC", sans-serif;
+  color: #101828;
+  background: #f4f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  background: #f4f7fb;
+}
+
+.host-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 72px 1fr;
+}
+
+.host-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.brand-block {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 64px;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 10px;
+  background: #182230;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+}
+
+.brand-block h1 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.brand-block p {
+  margin: 4px 0 0;
+  color: #667085;
+  font-size: 13px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.system-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px;
+  border-radius: 12px;
+  background: #f2f4f7;
+}
+
+.switch-btn {
+  border: 0;
+  background: transparent;
+  color: #475467;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.switch-btn.active {
+  background: #ffffff;
+  color: #101828;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.1);
+}
+
+.operator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #344054;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #182230;
+  color: white;
+  font-size: 14px;
+}
+
+.host-main {
+  height: calc(100vh - 72px);
+  background: #f4f7fb;
+}
+
+.host-main > div,
+.host-main iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
+}
+
+@media (max-width: 960px) {
+  .host-shell {
+    grid-template-rows: auto 1fr;
+  }
+
+  .host-header {
+    padding: 16px;
+    align-items: start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .host-main {
+    height: calc(100vh - 132px);
+  }
+}

@@ -1,0 +1,274 @@
+:root {
+  font-family: "Helvetica Neue", "PingFang SC", sans-serif;
+  color: #101828;
+  background: #f5f7fb;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+.middle-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.middle-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 24px;
+  background: linear-gradient(135deg, #0f766e, #178d82);
+  color: white;
+}
+
+.topbar-left h1,
+.module-head h3 {
+  margin: 0;
+}
+
+.topbar-left p,
+.module-head span,
+.warning-row small,
+.campaign-block small {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.topbar-right {
+  display: flex;
+  gap: 12px;
+}
+
+.top-stat {
+  min-width: 108px;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.top-stat span {
+  display: block;
+  font-size: 12px;
+  opacity: 0.88;
+}
+
+.top-stat strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 24px;
+}
+
+.middle-nav {
+  height: 48px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: #fff;
+  border-bottom: 1px solid #eaecf0;
+}
+
+.middle-tab {
+  border: 0;
+  background: transparent;
+  color: #475467;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.middle-tab.active {
+  color: #0f766e;
+}
+
+.middle-main {
+  padding: 18px 24px 24px;
+  display: grid;
+  gap: 16px;
+}
+
+.kanban {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.kanban-card,
+.module-card {
+  background: white;
+  border: 1px solid #eaecf0;
+  border-radius: 16px;
+}
+
+.kanban-card {
+  padding: 18px;
+}
+
+.kanban-card span {
+  display: block;
+  color: #667085;
+  font-size: 13px;
+}
+
+.kanban-card strong {
+  display: block;
+  margin: 10px 0 6px;
+  font-size: 32px;
+}
+
+.kanban-card small {
+  color: #98a2b3;
+}
+
+.middle-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 0.75fr;
+  gap: 16px;
+}
+
+.module-card {
+  padding: 18px;
+}
+
+.module-card.wide {
+  min-height: 320px;
+}
+
+.module-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 14px;
+}
+
+.module-head span {
+  color: #667085;
+}
+
+.grid-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grid-table th,
+.grid-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #eaecf0;
+  text-align: left;
+  font-size: 14px;
+}
+
+.warning-list,
+.campaign-stack {
+  display: grid;
+  gap: 12px;
+}
+
+.warning-row,
+.campaign-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.warning-pill {
+  align-self: center;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: #fff0eb;
+  color: #d9480f;
+  font-weight: 700;
+}
+
+.campaign-block {
+  flex-direction: column;
+}
+
+.campaign-block span {
+  color: #0f766e;
+  font-weight: 700;
+}
+
+.middle-template-library {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.middle-template-card {
+  min-height: 180px;
+  padding: 18px;
+  border-radius: 16px;
+  color: #111827;
+}
+
+.middle-template-card span,
+.middle-template-card strong,
+.middle-template-card small {
+  display: block;
+}
+
+.middle-template-card span {
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.middle-template-card strong {
+  margin: 14px 0 8px;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.template-meta {
+  margin-top: 18px;
+}
+
+.template-meta b,
+.template-meta span {
+  display: block;
+}
+
+.template-meta b {
+  color: #0f766e;
+}
+
+.template-meta span {
+  margin-top: 6px;
+  color: #475467;
+}
+
+.trace-list {
+  display: grid;
+  gap: 12px;
+}
+
+.trace-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.trace-row strong,
+.trace-row small,
+.trace-side span {
+  display: block;
+}
+
+.trace-row small,
+.trace-side small {
+  margin-top: 4px;
+  color: #667085;
+}
+
+.trace-side {
+  min-width: 120px;
+  text-align: right;
+}
+
+.trace-side span {
+  color: #0f766e;
+  font-weight: 700;
+}
